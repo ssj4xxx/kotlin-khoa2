@@ -1,16 +1,7 @@
-fun whatToDo(dayOfWeek: Any) = when (dayOfWeek) {
-    "Saturday", "Sunday" -> "Relax"
-    in listOf("Monday", "Tuesday", "Wednesday", "Thursday") -> "Work hard"
-    in 2..4 -> "Work hard"
-    "Friday" -> "Party"
-    is String -> "What?"
-    else -> "No clue"
+val sites = mapOf("pragprog" to "https://www.pragprog.com",
+    "agiledeveloper" to "https://agiledeveloper.com")
+println(sites.size)
+println(sites["pragprog"])
+for (entry in sites) {
+    println("${entry.key} --- ${entry.value}")
 }
-println(whatToDo("Sunday")) //Relax
-println(whatToDo("Wednesday")) //Work hard
-println(whatToDo(3)) //Work hard
-println(whatToDo("Friday")) //Party
-println(whatToDo("Munday")) //What?
-println(whatToDo(8)) //No clue
-println(whatToDo('8'))
-println(whatToDo("8"))
