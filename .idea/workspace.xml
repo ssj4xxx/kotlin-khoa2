@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c81d4a-ba34-45f5-8088-8fa9e8a39836" name="Changes" comment="Learning kotlin" />
+    <list default="true" id="73c81d4a-ba34-45f5-8088-8fa9e8a39836" name="Changes" comment="Learning kotlin">
+      <change afterPath="$PROJECT_DIR$/src/com/agiledeveloper/util/Util.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/object.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/object.kts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +86,7 @@
       <recent name="C:\Users\KhoaI5\IdeaProjects\kotlin-khoa2\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin script (Beta).object.kts">
+  <component name="RunManager" selected="Kotlin.UseUtilKt">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="kotlin-khoa2.main" />
@@ -92,6 +96,13 @@
     </configuration>
     <configuration name="PalindromeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PalindromeKt" />
+      <module name="kotlin-khoa2.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UseUtilKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.agiledeveloper.use.UseUtilKt" />
       <module name="kotlin-khoa2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,15 +122,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="kotlin-khoa2" />
-      <option name="filePath" value="$PROJECT_DIR$/src/main/test/test.kts" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.UseUtilKt" />
         <item itemvalue="Kotlin script (Beta).object.kts" />
         <item itemvalue="Kotlin script (Beta).test2.kts" />
         <item itemvalue="Kotlin.PalindromeKt" />

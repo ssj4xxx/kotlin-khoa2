@@ -1,8 +1,10 @@
-fun createRunnable(): Runnable {
-    val runnable = object: Runnable {
-        override fun run() { println("You called...") }
-    }
-    return runnable
+object Sun : Runnable {
+    val radiusInKM = 696000
+    var coreTemperatureInC = 15000000
+    override fun run() { println("spin...") }
 }
-val aRunnable = createRunnable()
-aRunnable.run() //You called...
+fun moveIt(runnable: Runnable) {
+    runnable.run()
+}
+println(Sun.radiusInKM) //696000
+moveIt(Sun) //spin...
