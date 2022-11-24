@@ -2,9 +2,10 @@ package chatapp
 
 import java.net.ServerSocket
 
-class Server(val port: Int): Runnable {
-    val serverSocket = ServerSocket(port)
+class Server(private val port: Int): Runnable {
+    private val serverSocket = ServerSocket(port)
     override fun run() {
+//        val allTasks: MutableList<HandleAClientTask>
         try {
             while (!serverSocket.isClosed) {
                 val socket = serverSocket.accept()
