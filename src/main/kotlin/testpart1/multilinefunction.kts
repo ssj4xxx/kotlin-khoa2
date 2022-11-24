@@ -1,3 +1,5 @@
+package testpart1
+
 fun max(numbers: IntArray): Int {
     var large = Int.MIN_VALUE
     for (number in numbers) {

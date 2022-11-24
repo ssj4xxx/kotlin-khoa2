@@ -1,10 +1,14 @@
+package testpart1
+
 import java.lang.RuntimeException
 
 abstract class Book(val name: String)
 class Fiction(name: String) : Book(name)
 class NonFiction(name: String) : Book(name)
-val books: List<Book> = listOf(Fiction("Moby Dick"), NonFiction("Learn to Code"),
-    Fiction("LOTR"))
+val books: List<Book> = listOf(
+    Fiction("Moby Dick"), NonFiction("Learn to Code"),
+    Fiction("LOTR")
+)
 
 inline fun <reified T> findFirst(books: List<Book>): T {
     val selected = books.filter { book -> book is T }

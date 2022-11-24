@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c81d4a-ba34-45f5-8088-8fa9e8a39836" name="Changes" comment="Learning kotlin">
-      <change afterPath="$PROJECT_DIR$/src/com/agiledeveloper/util/Util.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/Server.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/agiledeveloper/Car.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/agiledeveloper/UseCar.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/agiledeveloper/property.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2022_11_08_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2022_11_08_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/object.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/object.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Covariance.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/testpart1/Covariance.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/multilinefunction.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/testpart1/multilinefunction.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/object.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/testpart1/object.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/test2.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/testpart1/test2.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +47,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
         <option value="Class" />
         <option value="Kotlin Script" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -83,17 +91,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\KHOA121\IdeaProjects\kotlin-khoa2\src\main\kotlin\testpart1" />
+      <recent name="C:\Users\KHOA121\IdeaProjects\kotlin-khoa2\src\main\kotlin" />
+      <recent name="C:\Users\KHOA121\IdeaProjects\kotlin-khoa2\src\main" />
       <recent name="C:\Users\KhoaI5\IdeaProjects\kotlin-khoa2\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.UseUtilKt">
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="kotlin-khoa2.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin script (Beta).property.kts">
     <configuration name="PalindromeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PalindromeKt" />
       <module name="kotlin-khoa2.main" />
@@ -110,25 +114,32 @@
     </configuration>
     <configuration name="object.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="kotlin-khoa2" />
-      <option name="filePath" value="$PROJECT_DIR$/src/main/kotlin/object.kts" />
+      <option name="filePath" value="$PROJECT_DIR$/src/main/kotlin/testpart1/object.kts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="property.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="kotlin-khoa2" />
+      <option name="filePath" value="$PROJECT_DIR$/src/main/kotlin/com/agiledeveloper/property.kts" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="test2.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="kotlin-khoa2" />
-      <option name="filePath" value="$PROJECT_DIR$/src/main/kotlin/test2.kts" />
+      <option name="filePath" value="$PROJECT_DIR$/src/main/kotlin/testpart1/test2.kts" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin script (Beta).property.kts" />
         <item itemvalue="Kotlin.UseUtilKt" />
         <item itemvalue="Kotlin script (Beta).object.kts" />
         <item itemvalue="Kotlin script (Beta).test2.kts" />
         <item itemvalue="Kotlin.PalindromeKt" />
-        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668453265371</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Learning kotlin">
+      <created>1668591978648</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668591978648</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,3 +1,5 @@
+package testpart1
+
 object Sun : Runnable {
     val radiusInKM = 696000
     var coreTemperatureInC = 15000000
