@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c81d4a-ba34-45f5-8088-8fa9e8a39836" name="Changes" comment="Learning kotlin">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/Server.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/agiledeveloper/Car.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/agiledeveloper/UseCar.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/agiledeveloper/property.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2022_11_08_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2022_11_08_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="73c81d4a-ba34-45f5-8088-8fa9e8a39836" name="Changes" comment="Learning kotlin chatapp">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/Client.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/ClientApp.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Covariance.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/testpart1/Covariance.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/multilinefunction.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/testpart1/multilinefunction.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/object.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/testpart1/object.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/test2.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/testpart1/test2.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/Server.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/Server.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668591978648</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Learning kotlin chatapp">
+      <created>1669281112177</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669281112177</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,7 +225,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Learning" />
     <MESSAGE value="Learning kotlin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Learning kotlin" />
+    <MESSAGE value="Learning kotlin chatapp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Learning kotlin chatapp" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
