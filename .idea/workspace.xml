@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c81d4a-ba34-45f5-8088-8fa9e8a39836" name="Changes" comment="Learning kotlin chatapp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/Client.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/Client.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/ClientApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/ClientApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/HandleAClientTask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/HandleAClientTask.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/Server.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/Server.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/test.kt" afterDir="false" />
-    </list>
+    <list default="true" id="73c81d4a-ba34-45f5-8088-8fa9e8a39836" name="Changes" comment="Learning kotlin chatapp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -244,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669389761466</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Learning kotlin chatapp">
+      <created>1669403885818</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669403885818</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
