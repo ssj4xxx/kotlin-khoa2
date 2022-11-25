@@ -12,6 +12,7 @@ class Client(private val socket: Socket, private val username: String) {
     private val clientReader = BufferedReader(InputStreamReader(socket.getInputStream()))
     private val clientWriter = BufferedWriter(OutputStreamWriter(socket.getOutputStream()))
 
+    //Send messages to Server
     val sender = Thread {
         val input = Scanner(System.`in`)
         while (socket.isConnected) {
@@ -26,6 +27,7 @@ class Client(private val socket: Socket, private val username: String) {
         }
     }
 
+    //Receive messages from Server
     val receiver = Thread {
         while (socket.isConnected) {
             try {
