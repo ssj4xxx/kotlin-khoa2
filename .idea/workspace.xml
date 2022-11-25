@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c81d4a-ba34-45f5-8088-8fa9e8a39836" name="Changes" comment="Learning kotlin chatapp">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/test.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/Client.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/Client.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/ClientApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/ClientApp.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/HandleAClientTask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/HandleAClientTask.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/Server.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/Server.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chatapp/test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chatapp/test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +67,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2Gw7zT3TYrpQ2mMMYswELKIUEsw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -91,49 +96,58 @@
       <recent name="C:\Users\KhoaI5\IdeaProjects\kotlin-khoa2\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin script (Beta).property.kts">
-    <configuration name="PalindromeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PalindromeKt" />
+  <component name="RunManager" selected="Kotlin.ClientApp">
+    <configuration name="ClientApp" type="JetRunConfigurationType" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatapp.ClientApp" />
+      <module name="kotlin-khoa2.main" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientAppKt" type="JetRunConfigurationType" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatapp.ClientAppKt" />
+      <module name="kotlin-khoa2.main" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatapp.Server" />
       <module name="kotlin-khoa2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseUtilKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.agiledeveloper.use.UseUtilKt" />
+    <configuration name="ServerKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatapp.ServerKt" />
       <module name="kotlin-khoa2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="object.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="kotlin-khoa2" />
-      <option name="filePath" value="$PROJECT_DIR$/src/main/kotlin/testpart1/object.kts" />
+    <configuration name="test" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatapp.test" />
+      <module name="kotlin-khoa2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="property.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="kotlin-khoa2" />
-      <option name="filePath" value="$PROJECT_DIR$/src/main/kotlin/com/agiledeveloper/property.kts" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test2.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="kotlin-khoa2" />
-      <option name="filePath" value="$PROJECT_DIR$/src/main/kotlin/testpart1/test2.kts" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Kotlin.test" />
+      <item itemvalue="Kotlin.ClientApp" />
+      <item itemvalue="Kotlin.Server" />
+      <item itemvalue="Kotlin.ClientAppKt" />
+      <item itemvalue="Kotlin.ServerKt" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin script (Beta).property.kts" />
-        <item itemvalue="Kotlin.UseUtilKt" />
-        <item itemvalue="Kotlin script (Beta).object.kts" />
-        <item itemvalue="Kotlin script (Beta).test2.kts" />
-        <item itemvalue="Kotlin.PalindromeKt" />
+        <item itemvalue="Kotlin.ClientApp" />
+        <item itemvalue="Kotlin.Server" />
+        <item itemvalue="Kotlin.test" />
+        <item itemvalue="Kotlin.ClientAppKt" />
+        <item itemvalue="Kotlin.ServerKt" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669291748797</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Learning kotlin chatapp">
+      <created>1669389761466</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669389761466</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,10 +267,7 @@
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="JetRunConfigurationType">
-        <watch expression="number.toCharArray()" language="kotlin" />
-        <watch expression="number.toCharArray().reversed()" language="kotlin" />
-        <watch expression="listOf(number.toCharArray())" language="kotlin" />
-        <watch expression="listOf(number.toCharArray()).reversed()" language="kotlin" />
+        <watch expression="allTasks" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>

@@ -6,21 +6,19 @@ import java.io.InputStreamReader
 import java.io.OutputStreamWriter
 import java.net.Socket
 
-
 var allTasks: MutableList<HandleAClientTask> = mutableListOf()
-
 class HandleAClientTask(private val socket: Socket): Runnable {
     private val serverReader = BufferedReader(InputStreamReader(socket.getInputStream()))
     private val serverWriter = BufferedWriter(OutputStreamWriter(socket.getOutputStream()))
     private val taskClientName = serverReader.readLine()
 
     override fun run() {
-        while (socket.isConnected) {
+        broadcastToAll("has joined the chat")
+        while (!socket.isClosed) {
             try {
-                var messageFromAClient = serverReader.readLine()
+                val messageFromAClient = serverReader.readLine()
                 broadcastToAll(messageFromAClient)
             } catch (ex: Exception) {
-                ex.printStackTrace()
                 closeSocket()
             }
         }
@@ -29,7 +27,7 @@ class HandleAClientTask(private val socket: Socket): Runnable {
         for (task in allTasks) {
             try {
                 if (!task.taskClientName.equals(taskClientName)) {
-                    task.serverWriter.write(taskClientName + ": " + message)
+                    task.serverWriter.write("$taskClientName: $message")
                     task.serverWriter.newLine()
                     task.serverWriter.flush()
                 }
@@ -41,18 +39,17 @@ class HandleAClientTask(private val socket: Socket): Runnable {
         }
     }
     fun closeSocket() {
-        try {
-            if (socket != null) {
-                socket.close()
+        if (!socket.isClosed) {
+            try {
+                this.socket.close()
+                this.serverReader.close()
+                this.serverWriter.close()
+                allTasks.remove(this)
+                println("${this.taskClientName} has disconnected")
+                broadcastToAll("has left the chat")
+            } catch (ex: Exception) {
+                ex.printStackTrace()
             }
-            if (serverReader != null) {
-                serverReader.close()
-            }
-            if (serverWriter != null) {
-                serverWriter.close()
-            }
-        } catch (ex: Exception) {
-            ex.printStackTrace()
         }
     }
 

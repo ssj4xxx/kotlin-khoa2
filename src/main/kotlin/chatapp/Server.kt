@@ -5,7 +5,6 @@ import java.net.ServerSocket
 class Server(private val port: Int): Runnable {
     private val serverSocket = ServerSocket(port)
     override fun run() {
-
         try {
             while (!serverSocket.isClosed) {
                 val socket = serverSocket.accept()
@@ -19,9 +18,12 @@ class Server(private val port: Int): Runnable {
             ex.printStackTrace()
         }
     }
-    fun main(args: Array<String>) {
-        val server = Thread(Server(1234))
-        server.start()
-        println("Server starts")
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val server = Thread(Server(1234))
+            server.start()
+            println("Server starts")
+        }
     }
 }
