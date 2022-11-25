@@ -31,7 +31,7 @@ class Client(private val socket: Socket, private val username: String) {
             try {
                 println(clientReader.readLine())
             } catch (ex: Exception) {
-                println("Error receving message")
+                println("Error receiving message")
                 ex.printStackTrace()
             }
         }

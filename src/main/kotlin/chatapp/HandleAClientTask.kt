@@ -12,6 +12,7 @@ class HandleAClientTask(private val socket: Socket): Runnable {
     private val serverWriter = BufferedWriter(OutputStreamWriter(socket.getOutputStream()))
     private val taskClientName = serverReader.readLine()
 
+    //Display message server receive from client
     override fun run() {
         broadcastToAll("has joined the chat")
         while (!socket.isClosed) {
@@ -26,7 +27,7 @@ class HandleAClientTask(private val socket: Socket): Runnable {
     fun broadcastToAll(message: String) {
         for (task in allTasks) {
             try {
-                if (!task.taskClientName.equals(taskClientName)) {
+                if (!task.taskClientName.equals(taskClientName)) { //Display received message to all other clients
                     task.serverWriter.write("$taskClientName: $message")
                     task.serverWriter.newLine()
                     task.serverWriter.flush()
