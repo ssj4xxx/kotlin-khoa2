@@ -5,12 +5,13 @@ import java.net.ServerSocket
 class Server(private val port: Int): Runnable {
     private val serverSocket = ServerSocket(port)
     override fun run() {
-//        val allTasks: MutableList<HandleAClientTask>
+
         try {
             while (!serverSocket.isClosed) {
                 val socket = serverSocket.accept()
                 println("A new client has connected")
                 val task = HandleAClientTask(socket)
+                allTasks.add(task)
                 Thread(task).start()
             }
         } catch (ex: Exception) {
