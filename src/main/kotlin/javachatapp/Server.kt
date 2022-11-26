@@ -1,4 +1,4 @@
-package oldchatapp
+package javachatapp
 
 import java.io.IOException
 import java.net.ServerSocket

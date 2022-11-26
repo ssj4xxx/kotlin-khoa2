@@ -1,4 +1,4 @@
-package oldchatapp
+package javachatapp
 
 import java.io.*
 import java.net.Socket
@@ -6,34 +6,21 @@ import java.util.*
 
 //TODO: remove task khi client quit
 //TODO: remove client
-class HandleAClientTask(socket: Socket) : Runnable {
-    private val socket: Socket? = null
-    private var serverReader: BufferedReader? = null
-    private var serverWriter: BufferedWriter? = null
-    var taskClientName: String? = null
-
-    init {
-        try {
-            this.socket = socket
-            serverReader = BufferedReader(InputStreamReader(socket.getInputStream()))
-            serverWriter = BufferedWriter(OutputStreamWriter(socket.getOutputStream()))
-            taskClientName =
-                if (serverReader.readLine() == null) "random" else serverReader.readLine() //TODO: gen random username, doi username
-            allTasks.add(this)
-        } catch (ex: IOException) {
-            ex.printStackTrace()
-            closeSocket()
-        }
-    }
+class HandleAClientTask(private val socket: Socket) : Runnable {
+    private val serverReader = BufferedReader(InputStreamReader(socket.getInputStream()))
+    private val serverWriter = BufferedWriter(OutputStreamWriter(socket.getOutputStream()))
+    private val taskClientName = serverReader.readLine()
 
     override fun run() {
-        while (socket!!.isConnected) {
+        broadcastToAll("has joined the chat")
+        allTasks.add(this)
+        while (!socket!!.isClosed) {
             try {
                 val messageFromAClient = serverReader!!.readLine()
                 broadcastToAll(messageFromAClient)
             } catch (ex: Exception) {
-                ex.printStackTrace()
                 closeSocket()
+                broadcastToAll("has left the chat")
             }
         }
     }
@@ -56,9 +43,13 @@ class HandleAClientTask(socket: Socket) : Runnable {
 
     fun closeSocket() {
         try {
-            socket?.close()
-            serverReader?.close()
-            serverWriter?.close()
+            if (!socket!!.isClosed) {
+                socket.close()
+                serverReader!!.close()
+                serverWriter!!.close()
+                allTasks.remove(this)
+                println(taskClientName + " has disconnected")
+            }
         } catch (ex: Exception) {
             ex.printStackTrace()
         }
