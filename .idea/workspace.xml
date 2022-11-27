@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c81d4a-ba34-45f5-8088-8fa9e8a39836" name="Changes" comment="Learning kotlin chatapp">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_11_2022_10_02_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_11_2022_10_02_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/oldchatapp/Client.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/javachatapp/Client.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/oldchatapp/ClientApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/javachatapp/ClientApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/oldchatapp/ClientScreen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/oldchatapp/HandleAClientTask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/javachatapp/HandleAClientTask.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/oldchatapp/Server.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/javachatapp/Server.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/javachatapp/ClientApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/javachatapp/ClientApp.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,9 +95,9 @@
       <recent name="C:\Users\KhoaI5\IdeaProjects\kotlin-khoa2\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ClientApp (2)">
-    <configuration name="ClientApp (2)" type="JetRunConfigurationType" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javachatapp.ClientApp" />
+  <component name="RunManager" selected="Kotlin.ClientAppKt">
+    <configuration name="ClientAppKt" type="JetRunConfigurationType" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javachatapp.ClientAppKt" />
       <module name="kotlin-khoa2.main" />
       <shortenClasspath name="NONE" />
       <method v="2">
@@ -118,12 +113,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Kotlin.ClientApp (2)" />
+      <item itemvalue="Kotlin.ClientAppKt" />
       <item itemvalue="Kotlin.Server (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.ClientApp (2)" />
+        <item itemvalue="Kotlin.ClientAppKt" />
         <item itemvalue="Kotlin.Server (2)" />
       </list>
     </recent_temporary>
@@ -256,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669406735032</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Learning kotlin chatapp">
+      <created>1669436701203</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669436701203</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
